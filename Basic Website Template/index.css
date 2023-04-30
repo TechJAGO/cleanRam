@@ -1,0 +1,222 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body{
+    background: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  /* main div section */
+  .main{
+    display: grid;
+    background-color: transparent;
+    width: 100%;
+  }
+  
+  /* nav bar section */
+  .nav{
+    background-color: transparent;
+    display:flex;
+    width: 100%;
+  }
+  
+  .nav ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-style: none;
+  }
+  .nav ul li{
+    padding: 1.5rem;
+    margin: space-around;
+    color: black;
+  }
+
+  .nav a{
+    text-decoration: none;
+  }
+
+  .nav ul li :hover{
+    font-size: 2rem;
+  }
+  
+  .nav b{
+    font-size: 2.5rem;
+  }
+
+  #loginbtn{
+    height: 70px;
+    width: 150px;
+    color: azure;
+    font-weight: bolder;
+    border: 0ch;
+    box-shadow: 5px;
+  }
+
+  .nav button{
+    border-radius:10px;
+  }
+
+  /* nav bar hiding for phone screen  */
+
+  @media screen and (max-width: 551px) {
+
+    nav{
+      display: none;
+    }
+    
+  }
+
+  /* just a division */
+
+  .bodydivision{
+    background-image: linear-gradient(to top right, rgb(209, 76, 143), rgb(166, 0, 255),rgb(36, 36, 239));
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .bodydivision .textside{
+    text-align: center;
+    color: azure;
+    padding-top: 100px;
+    padding-left: 20px;
+    font-family: fantasy;
+    width: 40%;
+    font-size: 3rem; 
+    font-weight: bolder;
+  }
+  
+  @media screen and (max-width:550px){
+    .bodydivision .textside{
+      text-align: center;
+      color: azure;
+      padding-top: 80px;
+      padding-left: 20px;
+      font-family: fantasy;
+      width: 87%;
+      font-size: 2rem; 
+      text-align: center;
+      font-weight: bolder;
+    }
+  } 
+  
+  /* dividing into left and right section */
+  .bodydiv{
+    display: flex;
+  }
+  .rightdiv{
+    background-color: aqua;
+    width: 50%;
+    height: 50vh;
+  }
+  .leftdiv{
+    background-color: yellow;
+    width: 50%;
+    height: 50vh;
+  }
+  
+  /* phone screen adjustible */
+  @media screen and (max-width:550px){
+    .bodydiv{
+    display: flex;
+    flex-direction:column;
+  }
+  .rightdiv{
+    background-color: aqua;
+    width:100%;
+  }
+  .leftdiv{
+    background-color: yellow;
+    width:100%;
+  }
+  }
+  
+  /* membership cards */
+  
+  .membership{
+    background-color:lavender;
+    display: flex;
+    width: auto;
+    justify-content:space-evenly;
+    padding-bottom: 2rem;
+  }
+  
+  .cards{
+    background-color: rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+    width: 300px;
+    height: 400px;
+    margin: 1.5rem;
+    border-radius:20px;
+    text-align: center;
+  }
+  
+  .upsec{
+    background-color: rgb(91, 6, 128);
+    height: 15%;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    padding-top: 10%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+  }
+  .downsec{
+    background-color: rgb(255, 255, 255);
+    height: 85%;
+    border-radius:20px;
+  }
+
+  
+  /* phone view */
+
+  @media screen and (max-width: 550px) {
+    .membership{
+      background-color: lavender;
+      display: grid;
+      justify-content:space-evenly
+    }
+  }
+
+  /* footer screen */
+  .footertag{
+    background-color: rgb(17, 17, 17);
+    color: white;
+    display: flex;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .sec1{
+    width: 33%;
+    padding: 10px;
+  }
+  .sec2{
+    width: 33%;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 550px){
+    .footertag{
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      color: white;
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 10px;
+    }
+    .sec1{
+      width: 100%;
+    }
+    .sec2{
+      width: 100%;
+    }
+  }
